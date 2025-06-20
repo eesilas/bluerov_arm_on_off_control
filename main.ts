@@ -13,5 +13,8 @@ basic.pause(1000)
 xiamiBoard.OLEDclear()
 basic.showIcon(IconNames.Heart)
 basic.forever(function () {
-	
+    for (let index = 0; index <= 3000; index++) {
+        basic.pause(2000)
+        pins.servoSetPulse(AnalogPin.P8, index)
+    }
 })
