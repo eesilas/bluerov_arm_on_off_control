@@ -3,7 +3,7 @@ xiamiBoard.OLEDclear()
 xiamiBoard.tempHumiInit(SENSOR.SHTC3)
 basic.forever(function () {
     led.plot(0, 0)
-    pins.servoSetPulse(AnalogPin.P8, 1000)
+    pins.servoSetPulse(AnalogPin.P8, 1100)
     xiamiBoard.setRelay(RELAYVERSION.V2, RELAY.CLOSE)
     xiamiBoard.OLEDclear()
     xiamiBoard.OLEDshowUserText("Motor CW", 0, 0)
